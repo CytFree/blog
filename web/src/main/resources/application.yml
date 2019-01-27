@@ -1,0 +1,11 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /blog
+
+logging:
+  config: classpath:META-INF/log4j2.xml
+spring:
+  thymeleaf:
+    prefix: classpath:templates/
+    suffix: .html

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.4.RELEASE</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.cyt.springboot</groupId>
+    <artifactId>blog-demo</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <properties>
+        <jdk.version>1.8</jdk.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- 项目内模块依赖 -->
+            <dependency>
+                <groupId>com.cyt.springboot</groupId>
+                <artifactId>blog-common-dal</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.cyt.springboot</groupId>
+                <artifactId>blog-common-util</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.cyt.springboot</groupId>
+                <artifactId>blog-common-service-facade</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.cyt.springboot</groupId>
+                <artifactId>blog-common-service-integration</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.cyt.springboot</groupId>
+                <artifactId>blog-core-model</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.cyt.springboot</groupId>
+                <artifactId>blog-core-service</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.cyt.springboot</groupId>
+                <artifactId>blog-biz-service-impl</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.cyt.springboot</groupId>
+                <artifactId>blog-biz-shared</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- spring-boot依赖 -->
+        </dependencies>
+    </dependencyManagement>
+
+    <modules>
+        <module>test</module>
+        <module>web</module>
+        <module>core/model</module>
+        <module>core/service</module>
+        <module>biz/service-impl</module>
+        <module>biz/shared</module>
+        <module>common/dal</module>
+        <module>common/util</module>
+        <module>common/service/facade</module>
+        <module>common/service/integration</module>
+    </modules>
+
+
+</project>

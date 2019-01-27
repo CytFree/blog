@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="blog-biz-service-impl" />
+        <module name="blog-biz-shared" />
+        <module name="blog-common-dal" />
+        <module name="blog-common-service-facade" />
+        <module name="blog-common-service-integration" />
+        <module name="blog-common-util" />
+        <module name="blog-core-model" />
+        <module name="blog-core-service" />
+        <module name="blog-test" />
+        <module name="blog-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="blog-biz" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="blog-biz-service-impl" options="-parameters" />
+      <module name="blog-biz-shared" options="-parameters" />
+      <module name="blog-common-dal" options="-parameters" />
+      <module name="blog-common-service-facade" options="-parameters" />
+      <module name="blog-common-service-integration" options="-parameters" />
+      <module name="blog-common-util" options="-parameters" />
+      <module name="blog-core-model" options="-parameters" />
+      <module name="blog-core-service" options="-parameters" />
+      <module name="blog-test" options="-parameters" />
+      <module name="blog-web" options="-parameters" />
+    </option>
+  </component>
+</project>
